@@ -13,7 +13,7 @@
 .hero-subheading {
     font-size: 30px;
     font-weight: 600;
-    margin: 35px auto 58px ;
+    margin: 35px 58px ;
     line-height: 38px;
 }
 
@@ -24,5 +24,25 @@
     }
     .hero-subheading {
         font-size: 25px;
+    }
+}
+@media all and (max-width:767px){
+    .hero-section {
+        align-items: flex-start;
+        text-align: left;
+        min-height: 70vh;
+    }
+    .hero-heading {
+        font-size: 55px;
+        line-height: 47.5px;
+        width: 270px;
+        margin-top: 60px;
+    }
+    .hero-subheading {
+        font-size: 19px;
+        line-height: 24px;
+        /* margin: 35px 0px;  */
+        /* width: 320px; */
+        text-align: left;
     }
 }
