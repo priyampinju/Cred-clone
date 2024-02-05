@@ -1,5 +1,6 @@
 :root {
     --bg-black: #0f0f0f;
     --white: #f8f8f8;
-    
+    --bg-light-gray: rgb(39, 43, 45, 0.43);
+    --bg-red: rgb(238,47,76);
 }
