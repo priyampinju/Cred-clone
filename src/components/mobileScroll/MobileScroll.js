@@ -21,7 +21,7 @@ const scrollData = [
     {
         heading: "more cash in your pockets.",
         description: 'switch to CRED RentPay and start paying rent with your credit card. this way you get up to 45 days of credit free period, more reward points and a happy landlord.',
-        mobile_img: '',
+        mobile_img: 'https://web-images.credcdn.in/_next/assets/images/home-page/features/neopop-fold4.png',
     },
 ]
 
@@ -38,7 +38,7 @@ const MobileScroll = () => {
             ))}
             <div className="mobile-mockup-wrapper non-mobile">
                 <div className="mobile-mockup">
-                    <div className="mobile-mockup-sscreen flex absolute-center">
+                    <div className="mobile-mockup-screen flex absolute-center">
                         <img src={scrollData[currentImg].mobile_img} className="mobile-screen-image" />
                     </div>
                 </div>

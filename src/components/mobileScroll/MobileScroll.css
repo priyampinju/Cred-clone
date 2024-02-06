@@ -28,3 +28,39 @@
     max-height: 100vh;
     box-shadow: var(--mobile-box-shadow);
 }
+
+.mobile-mockup-screen {
+    background-color: var(--mobile-bg);
+    overflow: hidden;
+    height: 100%;
+    overflow: inherit;
+}
+.mobile-screen-image {
+    height: 100%;
+    object-fit: contain;
+}
+.screen-text-heading {
+    font-size: 105px;
+    font-weight: 700;
+    letter-spacing: -3.15px;
+    line-height: 105px;
+    opacity: 0.9;
+}
+.screen-text-description {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 52px;
+    max-width: 600px;
+}
+
+@media all and (max-width: 1279px) {
+    .mobile-scroll {
+        padding-bottom: 30px;
+    }
+    .mobile-mockup {
+        width: 272px;
+        height: 480px;
+        transform: translateX(10%);
+    }
+}
