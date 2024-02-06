@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../button/Button';
+import Button from '../../common/button/Button';
 import './feelSpecial.css';
 
 const FeelSpecial = () => {

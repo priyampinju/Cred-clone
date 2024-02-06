@@ -1,0 +1,30 @@
+.mobile-scroll {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.scroll-full-screen-wrapper {
+    width: 50%;
+}
+
+.scroll-full-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mobile-mockup-wrapper {
+    width: 50%;
+}
+.mobile-mockup {
+    position: sticky;
+    top: 150px;
+    transform: translateX(30%);
+    width: 350px;
+    height: 600px;
+    border-radius: 46px;
+    padding: 16px 14px;
+    max-height: 100vh;
+    box-shadow: var(--mobile-box-shadow);
+}
