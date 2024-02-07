@@ -95,10 +95,17 @@
     .photo-section-child {
         padding: 195px 0px 90px ;
     }
+    .footer {
+        font-size: 32px;
+    }
+
 }
 
 @media all and (min-width: 767px) {
     .only-mobile {
         display: none !important;
+    }
+    .footer {
+        font-size: 20px;
     }
 }
