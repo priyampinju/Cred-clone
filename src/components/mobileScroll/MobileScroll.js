@@ -9,7 +9,7 @@ const scrollData = [
         mobile_img: 'https://web-images.credcdn.in/_next/assets/images/home-page/features/neopop-fold1.png',
     },
     {
-        heading: "begin your winning streak." ,
+        heading: "begin your winning streak.",
         description: 'use your CRED coins to participate in games and raffles to win the most exclusive rewards and cashbacks on CRED. good luck.',
         mobile_img: 'https://web-images.credcdn.in/_next/assets/images/home-page/features/neopop-fold2.png',
     },
@@ -26,25 +26,25 @@ const scrollData = [
 ]
 
 const MobileScroll = () => {
-  const [currentImg, setCuurrentImg] = useState(0);
+    const [currentImg, setCuurrentImg] = useState(0);
 
     return (
-    <div className='max-width flex mobile-scroll'>
-        <div className="scroll-full-screen-wrapper">
-            {scrollData.map((screen, i) => (
-                <div className="scroll-full-screen">
-                    <ScreenText screen={screen} i={i} setCuurrentImg={setCuurrentImg}/>
-                </div>
-            ))}
+        <div className='max-width flex mobile-scroll'>
+            <div className="scroll-full-screen-wrapper">
+                {scrollData.map((screen, i) => (
+                    <div className="scroll-full-screen">
+                        <ScreenText screen={screen} i={i} setCurrentImg={setCuurrentImg} />
+                    </div>
+                ))}
+            </div>
             <div className="mobile-mockup-wrapper non-mobile">
                 <div className="mobile-mockup">
                     <div className="mobile-mockup-screen flex absolute-center">
-                        <img src={scrollData[currentImg].mobile_img} className="mobile-screen-image" />
+                        <img src={scrollData[currentImg].mobile_img} className="mobile-screen-image slide-in-right" key={scrollData[currentImg].mobile_img} />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 export default MobileScroll

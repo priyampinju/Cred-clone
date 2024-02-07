@@ -33,7 +33,7 @@
     background-color: var(--mobile-bg);
     overflow: hidden;
     height: 100%;
-    overflow: inherit;
+    border-radius: inherit;
 }
 .mobile-screen-image {
     height: 100%;
@@ -54,6 +54,16 @@
     max-width: 600px;
 }
 
+.screen-text {
+    opacity: 0;
+    padding-bottom: 80px;
+  }
+  
+.text-visible {
+    opacity: .9;
+    transition: 0.75s;
+  }
+
 @media all and (max-width: 1279px) {
     .mobile-scroll {
         padding-bottom: 30px;
@@ -62,5 +72,33 @@
         width: 272px;
         height: 480px;
         transform: translateX(10%);
+    }
+    .screen-text-heading {
+        font-size: 70px;
+        line-height: 70px;
+      }
+      .mobile-mockup {
+        transform: translateX(10%);
+      }
+    
+      .screen-text-description {
+        font-size: 18px;
+        margin-top: 44px;
+      }
+}
+
+
+@media all and (max-width: 767px) {
+    .mobile-mockup {
+      width: 272px;
+      height: 480px;
+    }
+    .screentr-text-heading {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  
+    .scroll-full-screen-wrapper {
+      width: 100%;
     }
 }
